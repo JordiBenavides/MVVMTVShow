@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		9DA7BC66257942E600BC81E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA7BC64257942E600BC81E2 /* Main.storyboard */; };
 		9DA7BC68257942E800BC81E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA7BC67257942E800BC81E2 /* Assets.xcassets */; };
 		9DA7BC6B257942E800BC81E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA7BC69257942E800BC81E2 /* LaunchScreen.storyboard */; };
+		9DA7BC772579452000BC81E2 /* Movi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BC762579452000BC81E2 /* Movi.swift */; };
 		ADDB4E3132F8D3C6E6335970 /* Pods_MVVMTVShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1B957063271CED906F140A /* Pods_MVVMTVShow.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		9DA7BC67257942E800BC81E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA7BC6A257942E800BC81E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DA7BC6C257942E800BC81E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA7BC762579452000BC81E2 /* Movi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movi.swift; sourceTree = "<group>"; };
 		CD1B957063271CED906F140A /* Pods_MVVMTVShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMTVShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DF2A4FF6AD039187997DF3 /* Pods-MVVMTVShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTVShow.debug.xcconfig"; path = "Target Support Files/Pods-MVVMTVShow/Pods-MVVMTVShow.debug.xcconfig"; sourceTree = "<group>"; };
 		F286285E0C0D2ED7DF46539B /* Pods-MVVMTVShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTVShow.release.xcconfig"; path = "Target Support Files/Pods-MVVMTVShow/Pods-MVVMTVShow.release.xcconfig"; sourceTree = "<group>"; };
@@ -56,7 +58,6 @@
 				D2DF2A4FF6AD039187997DF3 /* Pods-MVVMTVShow.debug.xcconfig */,
 				F286285E0C0D2ED7DF46539B /* Pods-MVVMTVShow.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +82,7 @@
 		9DA7BC5D257942E600BC81E2 /* MVVMTVShow */ = {
 			isa = PBXGroup;
 			children = (
+				9DA7BC75257944E600BC81E2 /* Main */,
 				9DA7BC5E257942E600BC81E2 /* AppDelegate.swift */,
 				9DA7BC60257942E600BC81E2 /* SceneDelegate.swift */,
 				9DA7BC62257942E600BC81E2 /* ViewController.swift */,
@@ -90,6 +92,38 @@
 				9DA7BC6C257942E800BC81E2 /* Info.plist */,
 			);
 			path = MVVMTVShow;
+			sourceTree = "<group>";
+		};
+		9DA7BC722579444800BC81E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7BC762579452000BC81E2 /* Movi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DA7BC732579445C00BC81E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9DA7BC742579446700BC81E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9DA7BC75257944E600BC81E2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7BC722579444800BC81E2 /* Model */,
+				9DA7BC732579445C00BC81E2 /* View */,
+				9DA7BC742579446700BC81E2 /* ViewModel */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA7BC772579452000BC81E2 /* Movi.swift in Sources */,
 				9DA7BC63257942E600BC81E2 /* ViewController.swift in Sources */,
 				9DA7BC5F257942E600BC81E2 /* AppDelegate.swift in Sources */,
 				9DA7BC61257942E600BC81E2 /* SceneDelegate.swift in Sources */,
