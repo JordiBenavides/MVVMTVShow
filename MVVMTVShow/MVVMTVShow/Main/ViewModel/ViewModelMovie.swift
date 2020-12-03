@@ -32,8 +32,8 @@ func retriveDataMovies() {
            case .success(let response):
                print("success")
                let array = try! response.map([Movie].self)
-               self.data = array
-               self.tableView.reloadData()
+//               self.data = array
+//               self.tableView.reloadData()
            case .failure:
                print("Error")
            }
