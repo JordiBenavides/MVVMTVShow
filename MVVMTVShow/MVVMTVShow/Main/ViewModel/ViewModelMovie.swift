@@ -12,6 +12,8 @@ import Moya
 
 let provider = MoyaProvider<TVShowAPI>()
 
+class ViewModelMovie {
+
 // Crear un mecanismo para enlazar lo que seria la vista con el modelo de la vista
 var refreshData = { () -> () in }
 
@@ -32,10 +34,11 @@ func retriveDataMovies() {
            case .success(let response):
                print("success")
                let array = try! response.map([Movie].self)
-//               self.data = array
-//               self.tableView.reloadData()
+               self.dataArray = array
+               //tableView.reloadData()
            case .failure:
                print("Error")
            }
        }
    }
+}

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  OneMovieViewController.swift
 //  MVVMTVShow
 //
 //  Created by Jordi Milla on 03/12/2020.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class OneMovieViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
     }
 
-
 }
-
