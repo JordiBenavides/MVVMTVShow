@@ -19,7 +19,7 @@
 		9DA7BC7F25794C1700BC81E2 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BC7E25794C1700BC81E2 /* String + Extension.swift */; };
 		9DA7BC8325794CDC00BC81E2 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BC8125794CDC00BC81E2 /* CustomTableViewCell.swift */; };
 		9DA7BC8425794CDC00BC81E2 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DA7BC8225794CDC00BC81E2 /* CustomTableViewCell.xib */; };
-		9DA7BC8625796AFA00BC81E2 /* OneMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BC8525796AFA00BC81E2 /* OneMovieViewController.swift */; };
+		9DA7BC882579748200BC81E2 /* OneMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA7BC872579748200BC81E2 /* OneMovieViewController.swift */; };
 		ADDB4E3132F8D3C6E6335970 /* Pods_MVVMTVShow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1B957063271CED906F140A /* Pods_MVVMTVShow.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 		9DA7BC7E25794C1700BC81E2 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		9DA7BC8125794CDC00BC81E2 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		9DA7BC8225794CDC00BC81E2 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
-		9DA7BC8525796AFA00BC81E2 /* OneMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMovieViewController.swift; sourceTree = "<group>"; };
+		9DA7BC872579748200BC81E2 /* OneMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMovieViewController.swift; sourceTree = "<group>"; };
 		CD1B957063271CED906F140A /* Pods_MVVMTVShow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMTVShow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DF2A4FF6AD039187997DF3 /* Pods-MVVMTVShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTVShow.debug.xcconfig"; path = "Target Support Files/Pods-MVVMTVShow/Pods-MVVMTVShow.debug.xcconfig"; sourceTree = "<group>"; };
 		F286285E0C0D2ED7DF46539B /* Pods-MVVMTVShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTVShow.release.xcconfig"; path = "Target Support Files/Pods-MVVMTVShow/Pods-MVVMTVShow.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,15 +94,11 @@
 		9DA7BC5D257942E600BC81E2 /* MVVMTVShow */ = {
 			isa = PBXGroup;
 			children = (
+				9DA7BC89257A51DE00BC81E2 /* Application */,
 				9DA7BC7D25794BD500BC81E2 /* Utils */,
 				9DA7BC7A25794B5800BC81E2 /* Network */,
 				9DA7BC75257944E600BC81E2 /* Main */,
-				9DA7BC5E257942E600BC81E2 /* AppDelegate.swift */,
-				9DA7BC60257942E600BC81E2 /* SceneDelegate.swift */,
-				9DA7BC64257942E600BC81E2 /* Main.storyboard */,
-				9DA7BC67257942E800BC81E2 /* Assets.xcassets */,
-				9DA7BC69257942E800BC81E2 /* LaunchScreen.storyboard */,
-				9DA7BC6C257942E800BC81E2 /* Info.plist */,
+				9DA7BC8A257A51EE00BC81E2 /* Resources */,
 			);
 			path = MVVMTVShow;
 			sourceTree = "<group>";
@@ -119,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				9DA7BC62257942E600BC81E2 /* MoviesViewController.swift */,
+				9DA7BC872579748200BC81E2 /* OneMovieViewController.swift */,
 				9DA7BC8025794C7B00BC81E2 /* Cell */,
 			);
 			path = View;
@@ -128,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				9DA7BC782579474E00BC81E2 /* ViewModelMovie.swift */,
-				9DA7BC8525796AFA00BC81E2 /* OneMovieViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -166,6 +162,26 @@
 				9DA7BC8225794CDC00BC81E2 /* CustomTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		9DA7BC89257A51DE00BC81E2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7BC60257942E600BC81E2 /* SceneDelegate.swift */,
+				9DA7BC5E257942E600BC81E2 /* AppDelegate.swift */,
+				9DA7BC6C257942E800BC81E2 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9DA7BC8A257A51EE00BC81E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DA7BC64257942E600BC81E2 /* Main.storyboard */,
+				9DA7BC69257942E800BC81E2 /* LaunchScreen.storyboard */,
+				9DA7BC67257942E800BC81E2 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,13 +301,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA7BC792579474E00BC81E2 /* ViewModelMovie.swift in Sources */,
-				9DA7BC8625796AFA00BC81E2 /* OneMovieViewController.swift in Sources */,
 				9DA7BC7C25794B9000BC81E2 /* TVShowAPI.swift in Sources */,
 				9DA7BC8325794CDC00BC81E2 /* CustomTableViewCell.swift in Sources */,
 				9DA7BC7F25794C1700BC81E2 /* String + Extension.swift in Sources */,
 				9DA7BC772579452000BC81E2 /* Movie.swift in Sources */,
 				9DA7BC63257942E600BC81E2 /* MoviesViewController.swift in Sources */,
 				9DA7BC5F257942E600BC81E2 /* AppDelegate.swift in Sources */,
+				9DA7BC882579748200BC81E2 /* OneMovieViewController.swift in Sources */,
 				9DA7BC61257942E600BC81E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MVVMTVShow/Info.plist;
+				INFOPLIST_FILE = MVVMTVShow/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MVVMTVShow/Info.plist;
+				INFOPLIST_FILE = MVVMTVShow/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
